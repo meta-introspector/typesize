@@ -4,13 +4,13 @@ description = "A library to fetch an accurate estimate of the total memory usage
 repository = "https://github.com/GnomedDev/typesize"
 keywords = ["memory", "optimisation", "derive"]
 categories = ["development-tools", "no-std"]
-rust-version = "1.65"
+# rust-version = "1.65"
 version = "0.1.14"
 edition = "2021"
 license = "MIT"
 
-[workspace]
-members = ["typesize-derive"]
+#[workspace]
+#members = ["typesize-derive"]
 
 [dependencies]
 parking_lot = { version = "0.12.1", default-features = false, optional = true }
@@ -66,9 +66,9 @@ web-time = ["dep:web-time"]
 [package.metadata.docs.rs]
 all-features = true
 
-[workspace.lints.clippy]
-pedantic = { level = "warn", priority = -1 }
+#[workspace.lints.clippy]
+#pedantic = { level = "warn", priority = -1 }
 
-[workspace.lints.rust]
-rust_2018_idioms = { level = "warn", priority = -1 }
-unsafe_code = "forbid"
+#[workspace.lints.rust]
+#rust_2018_idioms = { level = "warn", priority = -1 }
+#unsafe_code = "forbid"
